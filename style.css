@@ -18,22 +18,50 @@ header {
   background-color: #18181b;
   height: 8rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 2rem;
   border-bottom: 1px solid white;
 }
 
 #h-left {
+  padding-left: 2rem;
+  width: 9.5rem;
 
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 #h-center {
   font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#h-center > img {
+  width: 3rem;
 }
 
 #h-right {
+  padding-right: 2rem;
+  width: 9.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
 
+#h-right > a > img {
+  transition: 0.3s;
+  width: 2rem;
+}
+
+#h-right > a > img:hover {
+  scale: 1.2;
 }
 
 
@@ -292,4 +320,34 @@ footer {
 
 .review > img {
   width: 10rem;
+}
+
+
+
+/* CFooter */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+
+  gap: 0.5rem;
+  font-family: Montserrat;
+}
+
+footer > div:first-child {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+footer > div:nth-child(2) {
+  font-size: 1rem;
+}
+
+.icons > a > img {
+  width: 2.5rem;
+  transition: 0.3s;
+}
+
+.icons > a > img:hover {
+  scale: 1.2;
 }
