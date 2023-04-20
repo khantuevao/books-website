@@ -14,6 +14,11 @@ body {
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 header {
   background-color: #18181b;
   height: 8rem;
@@ -41,6 +46,7 @@ header {
   display: flex;
   align-items: center;
   gap: 1rem;
+  cursor: default;
 }
 
 #h-center > img {
@@ -53,16 +59,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: end;
+  cursor: default;
 }
 
-#h-right > a > img {
-  transition: 0.3s;
-  width: 2rem;
+#h-right > div {
+  font-size: 1.2rem;
 }
 
-#h-right > a > img:hover {
-  scale: 1.2;
-}
+
 
 
 
@@ -71,11 +75,19 @@ header {
   background-color: #18181b;
   display: flex;
   justify-content: center;
-  gap: 6rem;
+  align-items: center;
   padding: 1rem;
   position: sticky;
   top: 0rem;
   z-index: 999;
+}
+
+#bar-choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  position: relative;
 }
 
 .nav {
@@ -108,13 +120,21 @@ header {
   transition: .3s, -webkit-mask-size .3s .3s;
 }
 
-
-
-/* Main */
-#main > div {
+#cart {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  right: 2rem;
+}
+
+#cart > img {
+  transition: 0.3s;
+  width: 2rem;
+}
+
+#cart > img:hover {
+  scale: 1.2;
 }
 
 
@@ -123,6 +143,9 @@ header {
 #home {
   max-height: 85vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #home > div {
@@ -139,6 +162,7 @@ header {
 #home > div > div {
   font-size: 3.5rem;
   font-weight: 700;
+  cursor: default;
 }
 
 #home > div > a {
@@ -182,6 +206,9 @@ header {
 #author {
   gap: 4rem;
   padding: 8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #author > div:first-child {
@@ -199,7 +226,13 @@ h1 {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 2rem;
+  cursor: default;
 }
+
+p {
+  cursor: default;
+}
+
 .info > p {
   font-family: Montserrat;
   font-weight: 500;
@@ -220,19 +253,70 @@ h1 {
   padding: 4rem 2rem;
   padding-bottom: 8rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 4rem;
 }
 
-.books-lower {
+.books-right {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.books-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 #book-filter {
   width: 20rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: Montserrat;
+}
+
+.filter-title {
+  font-weight: 700;
+  cursor: default;
+}
+
+.filter-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.choice {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.choice {
   border: 1px solid white;
+  -webkit-mask: 
+    conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+     var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+    conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+     0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+    linear-gradient(#000 0 0) padding-box no-repeat;
+  transition: .3s, -webkit-mask-position .3s .3s;
+}
+
+
+.selected {
+  --_i: 100%;
+  transition: .3s, -webkit-mask-size .3s .3s;
+
 }
 
 #book-list {
@@ -297,6 +381,9 @@ footer {
 #reviews {
   padding: 4rem;
   padding-bottom: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 4rem;
 }
@@ -305,6 +392,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 6rem;
+  flex-wrap: wrap;
 }
 
 .review {
