@@ -19,6 +19,17 @@ a {
   color: white;
 }
 
+h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 2rem;
+  cursor: default;
+}
+
+p {
+  cursor: default;
+}
+
 header {
   background-color: #18181b;
   height: 8rem;
@@ -204,33 +215,45 @@ header {
 
 /* Author section */
 #author {
-  gap: 4rem;
-  padding: 8rem 0;
+  gap: 2rem;
+  padding: 4rem 0;
+  padding-bottom: 8rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#author > div:first-child {
+#author > h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#author > h1 > img {
+  width: 2.5rem;
+}
+
+.author-info > div:first-child {
   height: 20rem;
   width: 20rem;
   overflow: hidden;
   border-radius: 100rem;
 }
 
+.author-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
 .info {
   width: 40rem;
 }
 
-h1 {
-  font-family: Montserrat;
-  font-weight: 700;
-  font-size: 2rem;
-  cursor: default;
-}
-
-p {
-  cursor: default;
+.info > h1 {
+  font-size: 1.5rem;
 }
 
 .info > p {
@@ -240,7 +263,7 @@ p {
   line-height: 1.5;
 }
 
-#author > div > img {
+.author-info > div > img {
   width: 110%;
   margin-left: -2rem;
 }
@@ -263,10 +286,29 @@ p {
   gap: 4rem;
 }
 
+.books-right > h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.books-right > h1 > img {
+  width: 2rem;
+}
+
 .books-left {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.books-left > h1 {
+  display: flex;
+  align-items: center;
+}
+
+.books-left > h1 > img {
+  width: 2.5rem;
 }
 
 #book-filter {
@@ -335,7 +377,7 @@ p {
   gap: 1rem;
   cursor: pointer;
   transition: 0.5s;
-  padding: 1rem 2rem;
+  padding: 0 1rem;
 }
 
 
@@ -377,9 +419,20 @@ footer {
   gap: 4rem;
 }
 
+#reviews > h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#reviews > h1 > img {
+  width: 3rem;
+}
+
 #reviews-list {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 6rem;
   flex-wrap: wrap;
 }
