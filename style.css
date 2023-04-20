@@ -168,6 +168,16 @@ header {
 
 
 
+.element-animation {
+  opacity: 0;
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+
 /* Author section */
 #author {
   gap: 4rem;
