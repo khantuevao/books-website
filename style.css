@@ -724,10 +724,12 @@ footer > div:nth-child(2) {
 
   #modal-image {
     width: 8rem;
+    margin-top: -2rem;
   }
 
   #modal-title {
     font-size: 1.2rem;
+    margin: 0;
   }
 
   .modal-inner p {
