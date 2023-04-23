@@ -91,6 +91,11 @@ function populateModal(book) {
 
 
 // Books click
+const bookBza = document.querySelector("[data-key='0']");
+bookBza.addEventListener('click', () => {
+  populateModal(bookBzaInfo)
+  modal.classList.add('open')
+})
 const book1 = document.querySelector("[data-key='1']");
 book1.addEventListener('click', () => {
   populateModal(book1Info)
@@ -169,6 +174,12 @@ book15.addEventListener('click', () => {
 
 
 // Books info
+const bookBzaInfo = {
+  image: './images/book-covers/bza.jpg',
+  title: 'Қаңтар оқиғасы: Ақорда үшін күрес',
+  text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque repellat, aspernatur nulla perspiciatis illo adipisci alias, labore sapiente cumque corrupti optio distinctio perferendis voluptas beatae recusandae autem, at dolore.',
+  price: '2 500 тг.'
+}
 const book1Info = {
   image: './images/book-covers/1.jpg',
   title: 'Балықтар',

@@ -60,8 +60,18 @@ header {
   cursor: default;
 }
 
-#h-center > img {
+#h-center > div > img {
   width: 3rem;
+}
+
+#h-center > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#icons-mobile {
+  display: none;
 }
 
 #h-right {
@@ -91,10 +101,23 @@ header {
 
   #h-center {
     font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #h-center > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
   
-  #h-center > img {
+  #h-center > div > img {
     width: 1.5rem;
+  }
+
+  #icons-mobile > a > img {
+    display: flex;
+    width: 2rem;
   }
 
   #h-left {
@@ -268,7 +291,7 @@ header {
 @media (max-width: 768px) {  
   #home > a {
     position: absolute;
-    top: 23rem;
+    top: 27rem;
     bottom: auto;
     font-weight: 700;
     padding: 1rem 2rem;
@@ -429,7 +452,7 @@ header {
   scale: 1.2;
 }
 
-.book > div > img  {
+.book > img  {
   height: 18rem;
 }
 
