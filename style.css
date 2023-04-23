@@ -429,7 +429,7 @@ header {
   scale: 1.2;
 }
 
-.book > img  {
+.book > div > img  {
   height: 18rem;
 }
 
@@ -723,12 +723,16 @@ footer > div:nth-child(2) {
   }
 
   #modal-image {
-    width: 12rem;
+    width: 8rem;
+  }
+
+  #modal-title {
+    font-size: 1.2rem;
   }
 
   .modal-inner p {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .buy {
