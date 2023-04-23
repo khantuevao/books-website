@@ -195,9 +195,10 @@ header {
   }
   
   .nav {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
     border: 1px solid #18181b;
+    padding: 1rem;
   }
   
   #cart {
@@ -267,7 +268,7 @@ header {
 @media (max-width: 768px) {  
   #home > a {
     position: absolute;
-    top: 21rem;
+    top: 23rem;
     bottom: auto;
     font-weight: 700;
     padding: 1rem 2rem;
@@ -278,7 +279,7 @@ header {
   }
   
   #home > img {
-    margin-top: 0;
+    margin-top: 0rem;
   }
 }
 
@@ -345,6 +346,7 @@ header {
     gap: 0;
     padding: 4rem 2rem;
     padding-bottom: 4rem;
+    margin-top: 2rem;
   }
   
   #author > h1 {
