@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
+@font-face {
+  font-family: "Franklin";
+  src: url(./fonts/Franklin.ttf);
+  }
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,8 +14,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #18181b;
-  color: white;
+  background-color: #fefefe;
+  color: black;
   display: flex;
   flex-direction: column;
 }
@@ -19,10 +26,10 @@ a {
 }
 
 h1 {
-  font-family: Montserrat;
-  font-weight: 700;
-  font-size: 2rem;
+  font-family: Franklin;
+  font-size: 2.5rem;
   cursor: default;
+  font-weight: 500;
 }
 
 p {
@@ -31,19 +38,19 @@ p {
 
 /* Header */
 header {
-  background-color: #18181b;
-  height: 8rem;
+  background-color: #008bd2;
+  color: #fefefe;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 2rem;
   border-bottom: 1px solid white;
+  font-family: Franklin;
 }
 
 #h-left {
   padding-left: 2rem;
   width: 9.5rem;
-
 }
 
 .icons {
@@ -53,7 +60,6 @@ header {
 }
 
 #h-center {
-  font-weight: 900;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -61,13 +67,18 @@ header {
 }
 
 #h-center > div > img {
-  width: 3rem;
+  width: 10rem;
 }
 
 #h-center > div:first-child {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.w-name {
+  
+  font-size: 2.5rem;
 }
 
 #icons-mobile {
@@ -90,7 +101,6 @@ header {
 /* Mobile header */
 @media (max-width: 768px) {
   header {
-    background-color: #18181b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +143,7 @@ header {
 
 /* Navigation bar */
 #nav-bar {
-  background-color: #18181b;
+  background-color: #008bd2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,6 +151,7 @@ header {
   position: sticky;
   top: 0rem;
   z-index: 10;
+  font-family: Franklin;
 }
 
 #bar-choice {
@@ -159,7 +170,6 @@ header {
   font-weight: 900;
   color: white;
   text-decoration: none;
-  font-family: Montserrat;
   font-weight: 500;
   border: 1px solid #18181b;
   padding: 0.5rem 1rem;
@@ -247,33 +257,35 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 4rem;
 }
 
 #home > a {
-  position: absolute;
   bottom: 4rem;
-  font-weight: 700;
-  padding: 1rem 2rem;
-  font-family: Montserrat;
+  padding: 1rem 3rem;
+  font-family: Franklin;
   font-size: 1.5rem;
   text-decoration: none;
   border: 2px solid #0ea5e9;
   border-radius: 1rem;
   background: none;
-  background-color: #0ea5e9;
+  background-color: #008bd2;
   color: white;
   transition: 0.5s;
 }
 
 #home > a:hover {
-  background-color: #0284c7;
+  background-color: #0096d6;
   border: 2px solid white;
   color: white;
 }
 
 #home > img {
-  width: 100%;
-  margin-top: 3rem;
+  width: 20%;
+  margin-top: 2.5rem;
+  border: 1px solid rgb(180, 180, 180);
 }
 
 
@@ -317,6 +329,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #0096d6;
+  color: #fefefe;
 }
 
 #author > h1 {
@@ -349,6 +363,8 @@ header {
 
 .info > h1 {
   font-size: 1.5rem;
+  font-family: Montserrat;
+  font-weight: 700;
 }
 
 .info > p {
@@ -407,13 +423,14 @@ header {
 
 /* Books section */
 #books {
-  background-color: #27272a;
+  background-color: #fefefe;
   padding: 4rem 2rem;
   padding-bottom: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4rem;
+  color: black;
 }
 
 #books > h1 {
@@ -521,6 +538,8 @@ footer {
   justify-content: center;
   flex-direction: column;
   gap: 4rem;
+  background-color: #0096d6;
+  color: #fefefe;
 }
 
 #reviews > h1 {
@@ -610,14 +629,14 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
-
+  background-color: #008bd2;
+  color: #fefefe;
   gap: 0.5rem;
-  font-family: Montserrat;
+  font-family: Franklin;
 }
 
 footer > div:first-child {
   font-size: 1rem;
-  font-weight: 700;
 }
 
 footer > div:nth-child(2) {
@@ -673,7 +692,8 @@ footer > div:nth-child(2) {
 }
 
 .modal-inner {
-  background-color: #27272a;
+  background-color: #008bd2;
+  color: #fefefe;
   border-radius: 5px;
   box-shadow: 0 1px 4px rgba(255, 255, 255, 0.3);
   padding: 1rem 4rem;
@@ -699,6 +719,8 @@ footer > div:nth-child(2) {
 
 #modal-image {
   width: 20rem;
+  border: 1px solid rgb(180, 180, 180);
+
 }
 
 .modal-inner p {
