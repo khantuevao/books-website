@@ -122,7 +122,12 @@ header {
   }
   
   #h-center > div > img {
-    width: 1.5rem;
+    width: 4rem;
+  }
+
+  .w-name {
+  
+    font-size: 1.6rem;
   }
 
   #icons-mobile > a > img {
@@ -738,19 +743,19 @@ footer > div:nth-child(2) {
   font-family: Montserrat;
   font-size: 1rem;
   text-decoration: none;
-  border: 1px solid #0ea5e9;
+  border: 1px solid #fefefe;
   border-radius: 0.5rem;
   background: none;
-  background-color: #0ea5e9;
-  color: white;
+  background-color: #fefefe;
+  color: #008bd2;
   transition: 0.5s;
   cursor: pointer;
 }
 
 .buy:hover {
-  background-color: #0284c7;
-  border: 1px solid white;
-  color: white;
+  background-color: #008bd2;
+  border: 1px solid #fefefe;
+  color: #fefefe;
 }
 
 /* Mobile popup section */
