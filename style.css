@@ -38,14 +38,15 @@ p {
 
 /* Header */
 header {
-  background-color: #008bd2;
-  color: #fefefe;
+  background-color: white;
+  color: black;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10rem;
   align-items: center;
   font-size: 2rem;
-  border-bottom: 1px solid white;
   font-family: Franklin;
+  border-bottom: 1px solid black;
 }
 
 #h-left {
@@ -57,6 +58,14 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.icons.header {
+  width: 3rem;
+}
+
+.icons.header > a:first-child {
+  scale: 1.1;
 }
 
 #h-center {
@@ -86,17 +95,30 @@ header {
 }
 
 #h-right {
-  padding-right: 2rem;
-  width: 9.5rem;
   display: flex;
   align-items: center;
-  justify-content: end;
   cursor: default;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.2rem;
+  gap: 2rem;
 }
 
-#h-right > div {
-  font-size: 1.2rem;
+#h-right > a {
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: 0.1s;
 }
+
+#h-right > a:hover {
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+}
+
 
 /* Mobile header */
 @media (max-width: 768px) {
@@ -106,7 +128,6 @@ header {
     align-items: center;
     height: auto;
     padding: 0.5rem 0 1rem;
-    border-bottom: 1px solid white;
   }
 
   #h-center {
@@ -137,6 +158,10 @@ header {
     margin-top: -0.4rem;
   }
 
+  #icons-mobile > a:first-child {
+    scale: 1.1;
+  }
+
   #h-left {
     display: none;
   }
@@ -150,7 +175,7 @@ header {
 
 /* Navigation bar */
 #nav-bar {
-  background-color: #008bd2;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,6 +184,7 @@ header {
   top: 0rem;
   z-index: 10;
   font-family: Franklin;
+  border-bottom: 1px solid #002d7f;
 }
 
 #bar-choice {
@@ -175,7 +201,7 @@ header {
   align-items: center;
   font-size: 1.2rem;
   font-weight: 900;
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: 500;
   border: 1px solid #18181b;
@@ -184,7 +210,7 @@ header {
 }
 
 .nav {
-  border: 1px solid white;
+  border: 1px solid black;
   -webkit-mask: 
     conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
      var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
@@ -259,14 +285,14 @@ header {
 
 /* Home section */
 #home {
-  max-height: 80vh;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  padding-bottom: 4rem;
+  background: url(./images/back4.jpg);
+  padding-bottom: 8rem;
 }
 
 #home > a {
@@ -290,9 +316,7 @@ header {
 }
 
 #home > img {
-  width: 20%;
-  margin-top: 2.5rem;
-  border: 1px solid rgb(180, 180, 180);
+  width: 40%;
 }
 
 
@@ -309,7 +333,7 @@ header {
 /* Mobile home section */
 @media (max-width: 768px) {  
   #home {
-    padding: 4rem;
+    padding: 2rem 0 4rem;
   }
 
   #home > a {
@@ -323,7 +347,7 @@ header {
   
   #home > img {
     margin-top: 0rem;
-    width: 15rem;
+    width: 25rem;
   }
 }
 
