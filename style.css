@@ -38,15 +38,15 @@ p {
 
 /* Header */
 header {
-  background-color: white;
-  color: black;
+  background-color: #008bd2;
+  color: white;
   display: flex;
   justify-content: center;
   gap: 10rem;
   align-items: center;
   font-size: 2rem;
   font-family: Franklin;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
 #h-left {
@@ -65,7 +65,7 @@ header {
 }
 
 .icons.header > a:first-child {
-  scale: 1.1;
+  scale: 1.05;
 }
 
 #h-center {
@@ -106,15 +106,15 @@ header {
 
 #h-right > a {
   color: white;
-  background-color: black;
-  border: 2px solid black;
+  background-color: #008bd2;
+  border: 2px solid white;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   transition: 0.3s;
 }
 
 #h-right > a:hover {
-  border: 2px solid black;
+  border: 2px solid #008bd2;
   color: black;
   background-color: white;
 }
@@ -159,7 +159,7 @@ header {
   }
 
   #icons-mobile > a:first-child {
-    scale: 1.1;
+    scale: 1.05;
   }
 
   #h-left {
@@ -175,7 +175,7 @@ header {
 
 /* Navigation bar */
 #nav-bar {
-  background-color: white;
+  background-color: #008bd2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,7 +184,6 @@ header {
   top: 0rem;
   z-index: 10;
   font-family: Montserrat;
-  border-bottom: 1px solid #002d7f;
 }
 
 #bar-choice {
@@ -201,16 +200,16 @@ header {
   align-items: center;
   font-size: 1.2rem;
   font-weight: 900;
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: 500;
-  border: 1px solid #18181b;
+  border: 1px solid white;
   padding: 0.5rem 1rem;
   transition: 0.5s;
 }
 
 .nav {
-  border: 1px solid black;
+  border: 1px solid white;
   -webkit-mask: 
     conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
      var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
